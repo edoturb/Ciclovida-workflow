@@ -1,2 +1,19 @@
-# Ciclovida-workflow
-creación pipeline
+name: Run Hello World and LS
+
+on:
+  workflow_call:
+
+jobs:
+  run-inline-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Exec HolaMundo y LS
+        run: |
+          echo "Hola Mundo"
+          pwd
+          ls -lah
+          echo "Fin del Script"

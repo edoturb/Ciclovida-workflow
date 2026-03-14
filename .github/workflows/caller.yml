@@ -1,0 +1,5 @@
+on: [push]
+
+jobs:
+  mi-job:
+    uses: asanchezo-duoc/AUY1104-SharedWorkflows/.github/workflows/holamundo.yaml@pipeTest
